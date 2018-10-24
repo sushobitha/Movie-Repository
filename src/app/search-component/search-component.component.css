@@ -1,0 +1,19 @@
+.search {
+    background: transparent;
+    border: none;
+  }
+  form {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center
+}
+
+input[type=text], select {
+    padding: 12px 20px;
+    margin-top: 39px;
+    margin-left: -70px;
+    display: inline-block;
+    border: 1px solid darkorange;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

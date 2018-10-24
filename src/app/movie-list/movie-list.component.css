@@ -1,0 +1,22 @@
+.movielist-card {
+    min-width: 349px;
+    max-width: 349px;
+    min-height: 50%;
+    margin-bottom: 20px;
+    background-color: gainsboro;
+}
+
+.listImg {   
+    min-width: 150px;
+    max-width:150px;
+    max-height:150px;
+    min-height: 150px;
+    float: left;
+    margin-left: 1px; 
+    border: 1; 
+}
+
+.movielist-card:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }

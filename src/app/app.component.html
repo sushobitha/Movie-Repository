@@ -1,0 +1,19 @@
+<h3 class="header">Movie Repository</h3>
+
+<div class="mv-container">
+  <div class="mv-row">
+    <div class="col-4 myMargin">
+      <app-search-component (movieResults)="showResults($event)"></app-search-component>
+    </div>
+  </div>
+  <br><br>
+  <div class="mv-row">
+    <div class='mv-col'>
+      <app-movie-list [movieResults]='movieResults' *ngIf='movieResults' (details)='showDetails($event)'></app-movie-list>
+    </div>
+    <div class='mv-col-md-7'>
+      <app-movie-details [details]='details' *ngIf='details'></app-movie-details>
+    </div>
+  </div>
+
+</div>

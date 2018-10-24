@@ -1,0 +1,20 @@
+<mat-card class="movie-details">
+    <mat-card-title class="title">{{details.title}}</mat-card-title>
+    <mat-card-title class="tagline">{{details.tagline}}</mat-card-title>
+    <mat-card-content>
+        <div class="mv-row">
+            <div class="mv-col-md-4">
+                <p><b class="label">Release Date:</b> {{' '+details.release_date | date}}</p>
+                <p><b class="label">Language: </b><span *ngFor='let lang of details.spoken_languages'>{{' '+lang.name+' '}}</span>
+                </p>
+                <p><b class="label">Homepage:</b> <a href="{{details.homepage}}">{{' '+details.homepage}}</a></p>
+                <p><b class="label">Generes:</b> <span *ngFor='let gen of details.genres'>{{' '+gen.name+' '}}</span></p>
+                <p><b class="label">Budget:</b> {{' '+details.budget}}</p>
+            
+            </div>
+            <div class="mv-offset-sm-2 mv-col-md-3" style="text-align: right">
+                <img class="detailImg" src="http://image.tmdb.org/t/p/w185/{{details.poster_path}}" alt="Poster of {{details.title}} "></div>
+            <p>{{details.overview}}</p>
+        </div>
+    </mat-card-content>
+</mat-card>

@@ -1,0 +1,17 @@
+
+  <div>
+    <mat-card class="movielist-card" (click)="OnMatCardClickEvent(item)" *ngFor="let item of movieResults">
+        <div class="mv-row">
+          <div class="mv-col-6" style="padding : 10px"><img class="listImg" mat-card-image src="http://image.tmdb.org/t/p/w185/{{item.poster_path}}" 
+          alt="Poster of {{item.title}} "></div>
+          <div class="mv-col-6"><p>Title: {{item.title}}</p>
+        <p>Rating: {{item.vote_average}}/10</p>
+        <p>Released on: {{item.release_date | date}}</p></div>
+      </div>
+      <mat-card-content>
+        <p>
+          {{item.overview.slice(0,90)}}...
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>

@@ -1,0 +1,12 @@
+<form>
+  <div class="mv-row">
+    <div class="mv-col-9">
+      <input  #term type='text' name="searchText" autocomplete="on"autofocus size="50" placeholder="search a movie name.."
+        (focus)="clearall()">
+    </div>
+    <div class="mv-col-3" style="padding : 10px ; margin-left: -35px">
+      <button class="search" type="submit" (click)="searchText(term.value)">
+      </button>
+    </div>
+  </div>
+</form>
